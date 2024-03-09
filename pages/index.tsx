@@ -32,39 +32,14 @@ const Home: NextPage = () => {
             />
 
             {address ? (
-              <div className={styles.nft}>
-                <Web3Button
-                  contractAddress={editionDropAddress}
-                  action={() =>
-                    claim({
-                      tokenId: 0,
-                      quantity: 1,
-                    })
-                  }
-                >
-                  Claim Edition NFT
-                </Web3Button>
+              <div className={styles.card}>
+                <h2>Points</h2>
+                <p>Fanda Points: 20,120</p>
+                <p>Ford Points: 502</p>
               </div>
             ) : (
               <p>Please log in with your Google account or email</p>
             )}
-            {address && isLoading ? <p>Loading Owned NFTs...</p> : null}
-            {address && !isLoading && data && data.length === 0 ? (
-              <p>
-                {isClaiming
-                  ? "Deploying your account and claiming..."
-                  : "No NFTs, claim one now!"}
-              </p>
-            ) : null}
-            {data &&
-              data?.map((nft) => (
-                <div className={styles.container} key={nft.metadata.id}>
-                  <ThirdwebNftMedia metadata={nft.metadata} />
-                  <p>
-                    You own {nft.quantityOwned} {nft.metadata.name}
-                  </p>
-                </div>
-              ))}
           </div>
         </div>
       </div>

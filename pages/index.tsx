@@ -16,11 +16,12 @@ const Home: NextPage = () => {
   const { contract } = useContract(editionDropAddress);
   const { data, isLoading } = useOwnedNFTs(contract, address);
   const { mutateAsync: claim, isLoading: isClaiming } = useClaimNFT(contract);
+
   return (
     <main className={styles.main}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h1 className={styles.title}>
+          <h1 className={`${styles.title}, ${styles.gradientText0}`}>
                   Fanda Wallet<br />
           </h1>
           <div className={styles.connect}>
@@ -32,7 +33,7 @@ const Home: NextPage = () => {
             />
 
             {address ? (
-              <div className={styles.card}>
+              <div className={`${styles.card} ${styles.gradientText0} `}>
                 <h2>Points</h2>
                 <p>Fanda Points: 20,120</p>
                 <p>Ford Points: 502</p>

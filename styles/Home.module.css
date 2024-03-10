@@ -130,6 +130,16 @@
   line-height: 1.75;
 }
 
+
+.pointTypes {
+  float: left;
+}
+
+.points {
+  float: left;
+  text-align: right;
+}
+
 .logo {
   height: 1em;
   margin-left: 0.5rem;

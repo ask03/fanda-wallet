@@ -33,10 +33,16 @@ const Home: NextPage = () => {
             />
 
             {address ? (
-              <div className={`${styles.card} ${styles.gradientText0} `}>
+              <div className={` ${styles.gradientText0} `}>
                 <h2>Points Details</h2>
-                <p>Fanda - 20,120</p>
-                <p>Ford Focus Group - 502</p>
+                <div className={`${styles.pointTypes}`}>
+                <p>Fanda</p>
+                <p>Ford Focus Group</p>
+                </div>
+                <div className={`${styles.points}`}>
+                <p>25023</p>
+                <p>1232</p>
+                </div>
               </div>
             ) : (
               <p>Please log in with your Google account or email</p>

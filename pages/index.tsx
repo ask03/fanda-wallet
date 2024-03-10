@@ -21,7 +21,7 @@ const Home: NextPage = () => {
     <main className={styles.main}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h1 className={`${styles.title}, ${styles.gradientText0}`}>
+          <h1 className={`${styles.title, styles.gradientText3}`}>
                   Fanda Wallet<br />
           </h1>
           <div className={styles.connect}>
@@ -34,9 +34,9 @@ const Home: NextPage = () => {
 
             {address ? (
               <div className={`${styles.card} ${styles.gradientText0} `}>
-                <h2>Points</h2>
-                <p>Fanda Points: 20,120</p>
-                <p>Ford Points: 502</p>
+                <h2>Points Details</h2>
+                <p>Fanda - 20,120</p>
+                <p>Ford Focus Group - 502</p>
               </div>
             ) : (
               <p>Please log in with your Google account or email</p>

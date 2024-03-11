@@ -166,3 +166,7 @@
 .logo img {
   filter: invert(1);
 }
+
+.solid {
+  border-top: 1px solid #d067e2;
+}

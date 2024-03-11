@@ -36,20 +36,34 @@ const Home: NextPage = () => {
                 <h2>Points Details</h2>
                 <div className={`${styles.pointTypes}`}>
                 <p>Fanda</p>
+                <hr className={`${styles.solid}`}></hr>
                 <p>Dunkin</p>
+                <hr className={`${styles.solid}`}></hr>
                 <p>Ford Focus Group</p>
+                <hr className={`${styles.solid}`}></hr>
                 <p>Influencer Tier 1</p>
+                <hr className={`${styles.solid}`}></hr>
                 <p>Influencer Tier 2</p>
+                <hr className={`${styles.solid}`}></hr>
                 <p>Influencer Tier 3</p>
-                
+                <hr className={`${styles.solid}`}></hr>
+                <p>Total</p>
+
                 </div>
                 <div className={`${styles.points}`}>
                 <p>23,950</p>
+                <hr className={`${styles.solid}`}></hr>
                 <p>7,000</p>
+                <hr className={`${styles.solid}`}></hr>
                 <p>5,378</p>
+                <hr className={`${styles.solid}`}></hr>
                 <p>549</p>
+                <hr className={`${styles.solid}`}></hr>
                 <p>0</p>
+                <hr className={`${styles.solid}`}></hr>
                 <p>0</p>
+                <hr className={`${styles.solid}`}></hr>
+                <p>36,292</p>
                 </div>
               </div>
             ) : (
